@@ -1,0 +1,716 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://Sprite/retratos.png" type="Texture" id=1]
+[ext_resource path="res://GUI/Fuentes/slkscre.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://GUI/Fuentes/slkscr.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 16
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 16
+font/use_mipmaps = false
+font/use_filter = true
+font/font = ExtResource( 3 )
+
+[sub_resource type="CanvasItemMaterial" id=3]
+
+shader/shading_mode = 0
+
+[node name="MenuPJ" type="MarginContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 636.0
+margin/bottom = 154.0
+
+[node name="ColorFrame" type="ColorFrame" parent="."]
+
+visibility/opacity = 0.14
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 8.0
+margin/top = 0.0
+margin/right = 636.0
+margin/bottom = 154.0
+color = Color( 0.500268, 0.464539, 0.921875, 1 )
+
+[node name="Personaje1" type="HBoxContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 8.0
+margin/top = 0.0
+margin/right = 636.0
+margin/bottom = 154.0
+alignment = 0
+
+[node name="Patch9Frame" type="Patch9Frame" parent="Personaje1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 29.0
+margin/right = 96.0
+margin/bottom = 125.0
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 112, 98 )
+patch_margin/left = 96
+patch_margin/bottom = 96
+
+[node name="CenterContainer" type="CenterContainer" parent="Personaje1"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 100.0
+margin/top = 0.0
+margin/right = 504.0
+margin/bottom = 154.0
+use_top_left = false
+
+[node name="VBoxContainer" type="GridContainer" parent="Personaje1/CenterContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 23.0
+margin/right = 404.0
+margin/bottom = 131.0
+columns = 1
+
+[node name="GridContainer" type="GridContainer" parent="Personaje1/CenterContainer/VBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 404.0
+margin/bottom = 24.0
+custom_constants/hseparation = -78
+columns = 2
+
+[node name="Nombre" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 0
+margin/left = 86.0
+margin/top = 3.0
+margin/right = 166.0
+margin/bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.0296631, 0.108687, 0.949219, 1 )
+custom_constants/shadow_as_outline = 6851
+text = "Nombre"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="nombre" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 174.0
+margin/top = 0.0
+margin/right = 404.0
+margin/bottom = 24.0
+custom_colors/font_color = Color( 0.988281, 0, 0, 1 )
+text = "Lumar"
+placeholder/alpha = 1.0
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="GridContainer 2" type="GridContainer" parent="Personaje1/CenterContainer/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 28.0
+margin/right = 404.0
+margin/bottom = 108.0
+columns = 6
+
+[node name="Nivel" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 3.0
+margin/right = 93.0
+margin/bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Nivel"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="nivel" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 97.0
+margin/top = 0.0
+margin/right = 155.0
+margin/bottom = 24.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Exp" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 159.0
+margin/top = 3.0
+margin/right = 223.0
+margin/bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Exp."
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="exp" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 227.0
+margin/top = 0.0
+margin/right = 285.0
+margin/bottom = 24.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Clase" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 289.0
+margin/top = 3.0
+margin/right = 342.0
+margin/bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Clase"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="clase" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 346.0
+margin/top = 0.0
+margin/right = 404.0
+margin/bottom = 24.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Raza" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 31.0
+margin/right = 93.0
+margin/bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Raza"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="raza" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 97.0
+margin/top = 28.0
+margin/right = 155.0
+margin/bottom = 52.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Altura" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 159.0
+margin/top = 31.0
+margin/right = 223.0
+margin/bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Altura"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="altura" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 227.0
+margin/top = 28.0
+margin/right = 285.0
+margin/bottom = 52.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Edad" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 289.0
+margin/top = 31.0
+margin/right = 342.0
+margin/bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Edad"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="edad" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 346.0
+margin/top = 28.0
+margin/right = 404.0
+margin/bottom = 52.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Condicion" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 59.0
+margin/right = 93.0
+margin/bottom = 76.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Condicion"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="condicion" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 97.0
+margin/top = 56.0
+margin/right = 155.0
+margin/bottom = 80.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="CA" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 159.0
+margin/top = 59.0
+margin/right = 223.0
+margin/bottom = 76.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "CA"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ca" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 227.0
+margin/top = 56.0
+margin/right = 285.0
+margin/bottom = 80.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Vida" type="Label" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 289.0
+margin/top = 59.0
+margin/right = 342.0
+margin/bottom = 76.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.0296631, 0.108687, 0.949219, 1 )
+custom_constants/shadow_as_outline = 6851
+text = "Vida"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="vida" type="LineEdit" parent="Personaje1/CenterContainer/VBoxContainer/GridContainer 2"]
+
+material/material = SubResource( 3 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 346.0
+margin/top = 56.0
+margin/right = 404.0
+margin/bottom = 80.0
+custom_colors/font_color = Color( 0.988281, 0, 0, 1 )
+placeholder/alpha = 1.0
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="StatsContainer" type="GridContainer" parent="Personaje1"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 100, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 0
+size_flags/vertical = 0
+size_flags/stretch_ratio = 0.0
+margin/left = 508.0
+margin/top = 0.0
+margin/right = 628.0
+margin/bottom = 154.0
+columns = 2
+
+[node name="Stats" type="Label" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 58.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Base"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Base" type="Label" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 62.0
+margin/top = 0.0
+margin/right = 120.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Base"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Fuerza" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 58.0
+margin/bottom = 42.0
+text = "FUE"
+placeholder/alpha = 1.0
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Fuerza_Base" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 62.0
+margin/top = 18.0
+margin/right = 120.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Const" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+rect/min_size = Vector2( 12, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 46.0
+margin/right = 58.0
+margin/bottom = 70.0
+text = "CONS"
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Const_Base" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 62.0
+margin/top = 46.0
+margin/right = 120.0
+margin/bottom = 70.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Inte" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+rect/min_size = Vector2( 12, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 74.0
+margin/right = 58.0
+margin/bottom = 98.0
+text = "INT"
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Inte_Base" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 62.0
+margin/top = 74.0
+margin/right = 120.0
+margin/bottom = 98.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Agili" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+rect/min_size = Vector2( 12, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 102.0
+margin/right = 58.0
+margin/bottom = 126.0
+text = "DES"
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Agil_Base" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 62.0
+margin/top = 102.0
+margin/right = 120.0
+margin/bottom = 126.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Suerte" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+rect/min_size = Vector2( 12, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 130.0
+margin/right = 58.0
+margin/bottom = 154.0
+text = "SUE"
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Suerte_Base" type="LineEdit" parent="Personaje1/StatsContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 62.0
+margin/top = 130.0
+margin/right = 120.0
+margin/bottom = 154.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Personajes/Personaje.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Personajes/PJ1/ScriptPJ1/Personaje1.gd" type="Script" id=2]
+[ext_resource path="res://Sprite/Personajes/PJ1/SheetAnimWalk1.png" type="Texture" id=3]
+
+[node name="Personaje1" instance=ExtResource( 1 )]
+
+script/script = ExtResource( 2 )
+
+[node name="Sprite" parent="."]
+
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 3
+frame = 1
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[node name="Camera2D" parent="."]
+
+transform/pos = Vector2( 0.174828, 0 )
+
+

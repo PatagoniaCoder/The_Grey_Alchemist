@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Scripts/Seleccion.gd" type="Script" id=1]
+
+[node name="CuadroSeleccion" type="Polygon2D" groups=[
+"CUADROSELECCION",
+]]
+
+visibility/visible = false
+polygon = Vector2Array(  )
+uv = Vector2Array(  )
+color = Color( 0.992188, 0, 0, 0.295098 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+script/script = ExtResource( 1 )
+
+

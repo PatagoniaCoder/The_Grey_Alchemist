@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Personajes/Personaje.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Personajes/PJ6/ScriptPJ6/Personaje6.gd" type="Script" id=2]
+[ext_resource path="res://Sprite/Personajes/PJ6/SheetAnimWalk6.png" type="Texture" id=3]
+
+[node name="Personaje6" instance=ExtResource( 1 )]
+
+script/script = ExtResource( 2 )
+
+[node name="Sprite" parent="."]
+
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 3
+frame = 1
+
+

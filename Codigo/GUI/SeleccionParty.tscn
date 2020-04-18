@@ -1,0 +1,1130 @@
+[gd_scene load_steps=15 format=1]
+
+[ext_resource path="res://Scripts/GUI/SeleccionParty.gd" type="Script" id=1]
+[ext_resource path="res://Sprite/texturas/boton.png" type="Texture" id=2]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje5.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje6.tscn" type="PackedScene" id=8]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje7.tscn" type="PackedScene" id=9]
+[ext_resource path="res://GUI/SeleccionPJ/Personaje8.tscn" type="PackedScene" id=10]
+[ext_resource path="res://BGM/Sin título.ogg" type="AudioStream" id=11]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+shader/shading_mode = 0
+
+[sub_resource type="CanvasItemShader" id=2]
+
+_code = {
+"fragment": "",
+"fragment_ofs": 0,
+"light": "",
+"light_ofs": 0,
+"vertex": "",
+"vertex_ofs": 0
+}
+
+[sub_resource type="CanvasItemMaterial" id=3]
+
+shader/shader = SubResource( 2 )
+shader/shading_mode = 0
+
+[node name="Control" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 480.0
+script/script = ExtResource( 1 )
+
+[node name="TextureFrame" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 480.0
+texture = ExtResource( 2 )
+modulate = Color( 0.730469, 0.559265, 0.559265, 1 )
+expand = true
+stretch_mode = 0
+
+[node name="ColorFrame" type="ColorFrame" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 288.0
+margin/right = 155.0
+margin/bottom = 450.0
+color = Color( 0.0693816, 0.0625153, 0.941406, 0.300549 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+rect/min_size = Vector2( 640, 480 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 480.0
+custom_constants/separation = 57
+alignment = 0
+
+[node name="Titulo" type="Label" parent="VBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 0.98056, 0.976685, 0.992188, 1 )
+custom_colors/font_color_shadow = Color( 0.148438, 0, 1, 1 )
+custom_constants/shadow_as_outline = 6851
+text = "Seleccion de Personaje"
+align = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="VSplitContainer" type="VBoxContainer" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 71.0
+margin/right = 640.0
+margin/bottom = 165.0
+custom_constants/separation = 10
+alignment = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VSplitContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 64.0
+custom_constants/separation = 9
+alignment = 0
+
+[node name="PJ1" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 72.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje1" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ1" instance=ExtResource( 3 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ1/Personaje1"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ2" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 81.0
+margin/top = 0.0
+margin/right = 153.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje2" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ2" instance=ExtResource( 4 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ2/Personaje2"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ3" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 162.0
+margin/top = 0.0
+margin/right = 234.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje3" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ3" instance=ExtResource( 5 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ3/Personaje3"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ4" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 243.0
+margin/top = 0.0
+margin/right = 315.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje4" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ4" instance=ExtResource( 6 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ4/Personaje4"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ5" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 324.0
+margin/top = 0.0
+margin/right = 396.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje5" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ5" instance=ExtResource( 7 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ5/Personaje5"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ6" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 405.0
+margin/top = 0.0
+margin/right = 477.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje6" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ6" instance=ExtResource( 8 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ6/Personaje6"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ7" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 486.0
+margin/top = 0.0
+margin/right = 558.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje7" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ7" instance=ExtResource( 9 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ7/Personaje7"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="PJ8" type="MarginContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 567.0
+margin/top = 0.0
+margin/right = 639.0
+margin/bottom = 64.0
+custom_constants/margin_right = 64
+custom_constants/margin_bottom = 64
+
+[node name="Personaje8" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ8" instance=ExtResource( 10 )]
+
+[node name="ColorFrame" type="ColorFrame" parent="VBoxContainer/VSplitContainer/HBoxContainer/PJ8/Personaje8"]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 64.0
+color = Color( 0.976562, 0.931978, 0.640869, 0.245922 )
+
+[node name="Botones" type="HBoxContainer" parent="VBoxContainer/VSplitContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 74.0
+margin/right = 640.0
+margin/bottom = 94.0
+custom_constants/separation = 188
+alignment = 0
+
+[node name="Ant" type="Button" parent="VBoxContainer/VSplitContainer/Botones"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 20.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+text = "Anterior"
+flat = false
+
+[node name="Seleccionar" type="Button" parent="VBoxContainer/VSplitContainer/Botones"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 252.0
+margin/top = 0.0
+margin/right = 337.0
+margin/bottom = 20.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+text = "Seleccionar"
+flat = false
+
+[node name="Sig" type="Button" parent="VBoxContainer/VSplitContainer/Botones"]
+
+material/material = SubResource( 1 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 525.0
+margin/top = 0.0
+margin/right = 596.0
+margin/bottom = 20.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+text = "Siguiente"
+flat = false
+
+[node name="PanelContainer" type="MarginContainer" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 222.0
+margin/right = 640.0
+margin/bottom = 480.0
+
+[node name="VBoxContainer 2" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 8.0
+margin/top = 0.0
+margin/right = 640.0
+margin/bottom = 258.0
+alignment = 0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/PanelContainer/VBoxContainer 2"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 632.0
+margin/bottom = 24.0
+columns = 2
+
+[node name="Nombre" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 52.0
+margin/bottom = 24.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.0296631, 0.108687, 0.949219, 1 )
+custom_constants/shadow_as_outline = 6851
+text = "Nombre"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="nombre" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer" groups=[
+"persistente",
+]]
+
+material/material = SubResource( 3 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 56.0
+margin/top = 0.0
+margin/right = 632.0
+margin/bottom = 24.0
+custom_colors/font_color = Color( 0.988281, 0, 0, 1 )
+text = "ingrese nombre...."
+placeholder/alpha = 1.0
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="ID" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer" groups=[
+"persistente",
+]]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 28.0
+margin/right = 58.0
+margin/bottom = 52.0
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="GridContainer 2" type="GridContainer" parent="VBoxContainer/PanelContainer/VBoxContainer 2"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 28.0
+margin/right = 632.0
+margin/bottom = 70.0
+columns = 3
+
+[node name="Clase" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 208.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Clase"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Edad" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 212.0
+margin/top = 0.0
+margin/right = 420.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Edad"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Raza" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 424.0
+margin/top = 0.0
+margin/right = 632.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.265625, 0, 1, 1 )
+custom_constants/shadow_as_outline = 5660
+text = "Raza"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="clase" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 208.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="edad" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 212.0
+margin/top = 18.0
+margin/right = 420.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="raza" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/GridContainer 2" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 424.0
+margin/top = 18.0
+margin/right = 632.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer/VBoxContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 74.0
+margin/right = 632.0
+margin/bottom = 228.0
+alignment = 0
+
+[node name="Patch9Frame" type="Patch9Frame" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer"]
+
+rect/min_size = Vector2( 144, 144 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 144.0
+margin/bottom = 154.0
+region_rect = Rect2( 0, 0, 144, 144 )
+
+[node name="HDesc" type="VBoxContainer" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 148.0
+margin/top = 0.0
+margin/right = 446.0
+margin/bottom = 154.0
+alignment = 0
+
+[node name="Descripcion" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/HDesc"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 298.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Descripcion"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="descripcion" type="RichTextLabel" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/HDesc"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 298.0
+margin/bottom = 154.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 450.0
+margin/top = 0.0
+margin/right = 632.0
+margin/bottom = 154.0
+columns = 3
+
+[node name="Stats" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 58.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Stats"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Base" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 62.0
+margin/top = 0.0
+margin/right = 120.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Base"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Modif" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 124.0
+margin/top = 0.0
+margin/right = 182.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.139589, 0.0726318, 0.929688, 1 )
+custom_constants/shadow_as_outline = 3872
+text = "Modif"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Fuerza" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 58.0
+margin/bottom = 42.0
+text = "FUE"
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Fuerza_Base" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 18.0
+margin/right = 120.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Fuerza_Modif" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 124.0
+margin/top = 18.0
+margin/right = 182.0
+margin/bottom = 42.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Const" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 46.0
+margin/right = 58.0
+margin/bottom = 70.0
+text = "CONS"
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Const_Base" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 46.0
+margin/right = 120.0
+margin/bottom = 70.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Const_Modif" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 124.0
+margin/top = 46.0
+margin/right = 182.0
+margin/bottom = 70.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Inte" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 74.0
+margin/right = 58.0
+margin/bottom = 98.0
+text = "INT"
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Inte_Base" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 74.0
+margin/right = 120.0
+margin/bottom = 98.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Inte_Modif" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 124.0
+margin/top = 74.0
+margin/right = 182.0
+margin/bottom = 98.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Agili" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 102.0
+margin/right = 58.0
+margin/bottom = 126.0
+text = "DES"
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Agil_Base" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 102.0
+margin/right = 120.0
+margin/bottom = 126.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Agil_Modif" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 124.0
+margin/top = 102.0
+margin/right = 182.0
+margin/bottom = 126.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Suerte" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 130.0
+margin/right = 58.0
+margin/bottom = 154.0
+text = "SUE"
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Suerte_Base" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer" groups=[
+"persistente",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 130.0
+margin/right = 120.0
+margin/bottom = 154.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Suerte_Modif" type="LineEdit" parent="VBoxContainer/PanelContainer/VBoxContainer 2/HBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 124.0
+margin/top = 130.0
+margin/right = 182.0
+margin/bottom = 154.0
+placeholder/alpha = 0.6
+align = 1
+editable = false
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Aceptar" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 232.0
+margin/right = 632.0
+margin/bottom = 252.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Aceptar"
+flat = false
+
+[node name="ParyLlena" type="AcceptDialog" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 150.0
+margin/top = 210.0
+margin/right = 450.0
+margin/bottom = 268.0
+popup/exclusive = false
+window/title = "Alerta!"
+dialog/text = "Party llena!! maximo 5 personajes
+Deseleccione otro personaje para poder elegir este"
+dialog/hide_on_ok = true
+
+[node name="PartyIncompleta" type="AcceptDialog" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 150.0
+margin/top = 210.0
+margin/right = 450.0
+margin/bottom = 268.0
+popup/exclusive = false
+window/title = "Alerta!"
+dialog/text = "Seleccione al menos 5 personajes!!!"
+dialog/hide_on_ok = true
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 11 )
+stream/play = false
+stream/loop = true
+stream/volume_db = 0.0
+stream/autoplay = true
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
+
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/Botones/Ant" to="." method="_on_Ant_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/Botones/Seleccionar" to="." method="_on_Seleccionar_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/Botones/Sig" to="." method="_on_Sig_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/PanelContainer/VBoxContainer 2/Aceptar" to="." method="_on_Aceptar_pressed"]
+
+

@@ -1,0 +1,109 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://Scripts/Mago.gd" type="Script" id=1]
+[ext_resource path="res://Sprite/Actor1_2.png" type="Texture" id=2]
+[ext_resource path="res://Personajes/Animaciones/Idle.tres" type="Animation" id=3]
+[ext_resource path="res://Personajes/Animaciones/PJ_Walk_Down.tres" type="Animation" id=4]
+[ext_resource path="res://Personajes/Animaciones/PJ_Walk_Letf.tres" type="Animation" id=5]
+[ext_resource path="res://Personajes/Animaciones/PJ_Walk_Right.tres" type="Animation" id=6]
+[ext_resource path="res://Personajes/Animaciones/PJ_Walk_Up.tres" type="Animation" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 24 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 15.9715
+height = 14.9144
+
+[node name="Mago" type="KinematicBody2D" groups=[
+"PERSONAJE",
+]]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( -24, -24 )
+texture = ExtResource( 2 )
+offset = Vector2( 24, 24 )
+vframes = 8
+hframes = 12
+frame = 1
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+shape = SubResource( 2 )
+trigger = true
+_update_shape_index = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Idle = ExtResource( 3 )
+anims/PJ_Walk_Down = ExtResource( 4 )
+anims/PJ_Walk_Letf = ExtResource( 5 )
+anims/PJ_Walk_Right = ExtResource( 6 )
+anims/PJ_Walk_Up = ExtResource( 7 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+
+[connection signal="mouse_enter" from="Area2D" to="." method="_on_Area2D_mouse_enter"]
+
+[connection signal="mouse_exit" from="Area2D" to="." method="_on_Area2D_mouse_exit"]
+
+

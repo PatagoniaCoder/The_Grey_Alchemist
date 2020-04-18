@@ -1,0 +1,376 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://Scripts/SeleccionPJ.gd" type="Script" id=1]
+[ext_resource path="res://ico2n.png" type="Texture" id=2]
+
+[node name="ISeleccionPJ" type="CanvasLayer" groups=[
+"GUI",
+]]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+script/script = ExtResource( 1 )
+
+[node name="Panel_Principal" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 128.0
+margin/top = 288.0
+margin/right = 192.0
+margin/bottom = 448.0
+
+[node name="TextureFrame" type="Patch9Frame" parent="Panel_Principal"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -128.0
+margin/top = 64.0
+margin/right = 0.0
+margin/bottom = 192.0
+
+[node name="Button" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LAtaque" type="Label" parent="Panel_Principal/Button"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Ataque"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button 2" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 32.0
+margin/right = 64.0
+margin/bottom = 64.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LMagia" type="Label" parent="Panel_Principal/Button 2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Magia"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button6" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 64.0
+margin/right = 64.0
+margin/bottom = 96.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LSkill" type="Label" parent="Panel_Principal/Button6"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Skill"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button3" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 96.0
+margin/right = 64.0
+margin/bottom = 128.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LItem" type="Label" parent="Panel_Principal/Button3"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Item"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button4" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 128.0
+margin/right = 64.0
+margin/bottom = 160.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LHabilidad" type="Label" parent="Panel_Principal/Button4"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Habilidad"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button5" type="Button" parent="Panel_Principal"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 160.0
+margin/right = 64.0
+margin/bottom = 192.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LPasarTurno" type="Label" parent="Panel_Principal/Button5"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 32.0
+text = "Pasar 
+Turno"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 2
+
+[node name="Sub_Panel_Magia" type="Panel" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 192.0
+margin/top = 288.0
+margin/right = 384.0
+margin/bottom = 352.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Sub_Panel_Magia"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 192.0
+margin/bottom = 64.0
+scroll/horizontal = false
+scroll/vertical = true
+
+[node name="VButtonArray" type="VButtonArray" parent="Sub_Panel_Magia/ScrollContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 131.0
+margin/bottom = 116.0
+flat = true
+button/count = 5
+button/min_button_size = 1.0
+button/align = 0
+button/0/text = "Ataque Poderoso"
+button/0/tooltip = ""
+button/0/icon = ExtResource( 2 )
+button/1/text = "Fintar"
+button/1/tooltip = ""
+button/1/icon = null
+button/2/text = "Etc"
+button/2/tooltip = ""
+button/2/icon = null
+button/3/text = "depende de pj"
+button/3/tooltip = ""
+button/3/icon = null
+button/4/text = ""
+button/4/tooltip = ""
+button/4/icon = null
+button/selected = 0
+
+[node name="Sub_Panel_Item" type="Panel" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 192.0
+margin/top = 352.0
+margin/right = 384.0
+margin/bottom = 416.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Sub_Panel_Item"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 192.0
+margin/bottom = 64.0
+scroll/horizontal = false
+scroll/vertical = true
+
+[node name="ItemList" type="ItemList" parent="Sub_Panel_Item/ScrollContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="Sub_Panel_Habilidad" type="Panel" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 192.0
+margin/top = 384.0
+margin/right = 384.0
+margin/bottom = 448.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Sub_Panel_Habilidad"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 192.0
+margin/bottom = 64.0
+scroll/horizontal = false
+scroll/vertical = true
+
+[node name="VButtonArray" type="VButtonArray" parent="Sub_Panel_Habilidad/ScrollContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 55.0
+margin/bottom = 44.0
+flat = true
+button/count = 2
+button/min_button_size = -1.0
+button/align = 1
+button/0/text = "Robar"
+button/0/tooltip = ""
+button/0/icon = null
+button/1/text = "Domar"
+button/1/tooltip = ""
+button/1/icon = null
+button/selected = 0
+
+[connection signal="pressed" from="Panel_Principal/Button 2" to="." method="_on_Button_2_pressed"]
+
+

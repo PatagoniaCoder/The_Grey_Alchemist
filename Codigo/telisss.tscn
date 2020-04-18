@@ -1,0 +1,686 @@
+[gd_scene load_steps=20 format=1]
+
+[ext_resource path="res://Sprite/PathAndObjects.png" type="Texture" id=1]
+
+[sub_resource type="NavigationPolygon" id=1]
+
+vertices = Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+
+vertices = Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+
+vertices = Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=4]
+
+vertices = Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32, 16, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=5]
+
+vertices = Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=6]
+
+vertices = Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=7]
+
+vertices = Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32, 16, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=8]
+
+vertices = Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=9]
+
+vertices = Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=10]
+
+vertices = Vector2Array( 16, 16, 32, 16, 32, 32, 16, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 16, 16, 16, 32, 32, 32, 32, 16, 16, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=11]
+
+vertices = Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 32, 16, 32, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=12]
+
+vertices = Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 16, 16, 16, 16, 32, 0, 32, 0, 16 ) ]
+
+[sub_resource type="NavigationPolygon" id=13]
+
+vertices = Vector2Array( 32, 0, 32, 32, 16, 32, 16, 0 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( 16, 0, 16, 32, 32, 32, 32, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=14]
+
+vertices = Vector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 0, 32, 0, 32, 32, 0, 32, 0, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=15]
+
+vertices = Vector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 0, 16, 0, 16, 32, 0, 32, 0, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=16]
+
+vertices = Vector2Array( 16, 0, 32, 0, 32, 16, 16, 16 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 16, 0, 16, 16, 32, 16, 32, 0, 16, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=17]
+
+vertices = Vector2Array( 0, 0, 32, 0, 32, 16, 0, 16 )
+polygons = [ IntArray( 0, 1, 2, 3, 0 ) ]
+outlines = [ Vector2Array( 0, 0, 32, 0, 32, 16, 0, 16, 0, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=18]
+
+vertices = Vector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite"]
+
+navpoly = SubResource( 1 )
+enabled = true
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 1
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite1"]
+
+navpoly = SubResource( 2 )
+enabled = true
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 2
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite2"]
+
+navpoly = SubResource( 3 )
+enabled = true
+
+[node name="Sprite3" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 3
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite3"]
+
+navpoly = SubResource( 4 )
+enabled = true
+
+[node name="Sprite4" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 4
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite4"]
+
+navpoly = SubResource( 5 )
+enabled = true
+
+[node name="Sprite5" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 5
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite5"]
+
+navpoly = SubResource( 6 )
+enabled = true
+
+[node name="Sprite6" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 192, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 6
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite6"]
+
+navpoly = SubResource( 7 )
+enabled = true
+
+[node name="Sprite7" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 224, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 7
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite7"]
+
+navpoly = SubResource( 8 )
+enabled = true
+
+[node name="Sprite8" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 256, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 8
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite8"]
+
+navpoly = SubResource( 9 )
+enabled = true
+
+[node name="Sprite9" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 288, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 9
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite9"]
+
+navpoly = SubResource( 10 )
+enabled = true
+
+[node name="Sprite10" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 320, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 10
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite10"]
+
+navpoly = SubResource( 11 )
+enabled = true
+
+[node name="Sprite11" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 352, 0 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 11
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite11"]
+
+navpoly = SubResource( 12 )
+enabled = true
+
+[node name="Sprite16" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 16
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite16"]
+
+navpoly = SubResource( 13 )
+enabled = true
+
+[node name="Sprite17" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 17
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite17"]
+
+navpoly = SubResource( 14 )
+enabled = true
+
+[node name="Sprite18" type="Sprite" parent="."]
+
+transform/pos = Vector2( 64, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 18
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite18"]
+
+navpoly = SubResource( 15 )
+enabled = true
+
+[node name="Sprite19" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 96, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 19
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite19"]
+
+navpoly = SubResource( 13 )
+enabled = true
+
+[node name="Sprite20" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 20
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite20"]
+
+navpoly = SubResource( 14 )
+enabled = true
+
+[node name="Sprite21" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 21
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1 2" type="NavigationPolygonInstance" parent="Sprite21"]
+
+navpoly = SubResource( 15 )
+enabled = true
+
+[node name="Sprite22" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 192, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 22
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite22"]
+
+navpoly = SubResource( 13 )
+enabled = true
+
+[node name="Sprite23" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 224, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 23
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite23"]
+
+navpoly = SubResource( 14 )
+enabled = true
+
+[node name="Sprite24" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 256, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 24
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite24"]
+
+navpoly = SubResource( 15 )
+enabled = true
+
+[node name="Sprite25" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 288, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 25
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite25"]
+
+navpoly = SubResource( 13 )
+enabled = true
+
+[node name="Sprite26" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 320, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 26
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite26"]
+
+navpoly = SubResource( 14 )
+enabled = true
+
+[node name="Sprite27" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 352, 32 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 27
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance1" type="NavigationPolygonInstance" parent="Sprite27"]
+
+navpoly = SubResource( 15 )
+enabled = true
+
+[node name="Sprite32" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 32
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite32"]
+
+navpoly = SubResource( 16 )
+enabled = true
+
+[node name="Sprite33" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 32, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 33
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite33"]
+
+navpoly = SubResource( 17 )
+enabled = true
+
+[node name="Sprite34" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 64, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 34
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite34"]
+
+navpoly = SubResource( 18 )
+enabled = true
+
+[node name="Sprite35" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 96, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 35
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite35"]
+
+navpoly = SubResource( 16 )
+enabled = true
+
+[node name="Sprite36" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 128, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 36
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite36"]
+
+navpoly = SubResource( 17 )
+enabled = true
+
+[node name="Sprite37" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 160, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 37
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite37"]
+
+navpoly = SubResource( 18 )
+enabled = true
+
+[node name="Sprite38" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 192, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 38
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite38"]
+
+navpoly = SubResource( 16 )
+enabled = true
+
+[node name="Sprite39" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 224, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 39
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite39"]
+
+navpoly = SubResource( 17 )
+enabled = true
+
+[node name="Sprite40" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 256, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 40
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite40"]
+
+navpoly = SubResource( 18 )
+enabled = true
+
+[node name="Sprite41" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 288, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 41
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite41"]
+
+navpoly = SubResource( 16 )
+enabled = true
+
+[node name="Sprite42" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 320, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 42
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite42"]
+
+navpoly = SubResource( 17 )
+enabled = true
+
+[node name="Sprite43" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 352, 64 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 16
+hframes = 16
+frame = 43
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Sprite43"]
+
+navpoly = SubResource( 18 )
+enabled = true
+
+
